@@ -1,10 +1,10 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+body{
   background-color: #fff;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
@@ -12,13 +12,12 @@ body {
   font-style: normal;
 }
 
-main,
-div {
+main, div{
   display: flex;
   flex-direction: row;
 }
 
-header {
+header{
   display: flex;
   background-color: #333;
   min-width: 100%;
@@ -26,7 +25,7 @@ header {
   justify-content: center;
 }
 
-header h1 {
+header h1{
   font-size: 5vh;
   padding-top: 8vh;
   letter-spacing: 0.9vh;
@@ -36,11 +35,11 @@ header h1 {
   text-shadow: black 0.2em 0.2em 0.3em;
 }
 
-p {
+p{
   font-size: 2.5vh;
 }
 
-#koszyk {
+#koszyk{
   display: flex;
   background-color: #fff;
   height: 12vh;
@@ -53,57 +52,54 @@ p {
   margin-right: 2%;
 }
 
-#koszykimg {
+#koszykimg{
   height: 6vh;
   width: 6vh;
 }
 
-.menu {
+.menu{
   background-color: #333;
   min-width: 20%;
   min-height: 74vh;
   justify-content: center;
 }
 
-.menu ul,
-li {
+.menu ul, li{
   color: white;
   font-size: 3vh;
   text-shadow: black 0.2em 0.2em 0.3em;
 }
 
-.menu,
-.submenu {
+.menu, .submenu{
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.submenu {
+.submenu{
   display: none;
   padding-left: 2vh;
 }
 
-.toggle {
+.toggle{
   display: none;
 }
 
-.toggle:checked + .submenu {
+.toggle:checked + .submenu{
   display: block;
 }
 
-a {
+a{
   text-decoration: none;
   color: white;
 }
 
-section ul {
+section ul{
   padding-left: 5vh;
   padding-top: 2vh;
 }
 
-ul ul,
-li ul {
+ul ul, li ul{
   padding-top: 0;
   padding-left: 4vh;
 }
@@ -112,49 +108,43 @@ li ul {
     margin-left: 5vh;
   }
 }
-.content {
+.content{
   max-width: 80%;
 }
 
-.content,
-.contentSklep,
-.contentKontakty {
+.content, .contentSklep, .contentKontakty{
   display: flex;
   margin-top: 5vh;
-  margin-left: 17vh;
+  margin-left: 20vh;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
-.contentKontakty {
+.contentKontakty{
   margin-left: 37vh;
 }
 
-.contentSklep {
+.contentSklep{
   max-width: 100%;
   margin-left: 16vh;
   overflow-y: scroll;
 }
 
-.content h2,
-.contentKontakty h2 {
+.content h2, .contentKontakty h2{
   font-size: 4vh;
 }
 
-.content div h3,
-.contentKontakty div h3 {
+.content div h3, .contentKontakty div h3{
   margin-left: 3vh;
   margin-right: 8.5vh;
 }
 
-.content a,
-.contentSklep a,
-.contentKontakty a {
+.content a, .contentSklep a, .contentKontakty a{
   color: black;
 }
 
-.wystawa {
+.wystawa{
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
@@ -162,7 +152,7 @@ li ul {
   width: 15vh;
 }
 
-#rabaty {
+#rabaty{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,17 +166,16 @@ li ul {
   text-shadow: black 0.2em 0.2em 0.3em;
 }
 
-.rabatyLista {
+.rabatyLista{
   list-style-type: none;
   margin-top: 0.5vh;
 }
 
-.kodRabat {
+.kodRabat{
   font-weight: bold;
 }
 
-.tytulcontent,
-.tytulcontentSklep {
+.tytulcontent, .tytulcontentSklep{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,19 +188,19 @@ li ul {
   text-shadow: black 0.2em 0.2em 0.3em;
 }
 
-.tytulcontentSklep {
+.tytulcontentSklep{
   position: static;
   width: 30vh;
 }
 
-footer {
+footer{
   position: sticky;
   background-color: #333;
   height: 6vh;
   width: 100%;
 }
 
-footer p {
+footer p{
   padding-top: 2vh;
   text-align: center;
   color: white;
@@ -219,26 +208,25 @@ footer p {
   text-shadow: black 0.2em 0.2em 0.3em;
 }
 
-form {
+form{
   margin-top: 1vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-textarea {
+textarea{
   resize: none;
   font-size: 2vh;
   padding: 1.5vh;
 }
 
-#przyciski {
+#przyciski{
   display: flex;
   width: 100%;
 }
 
-button[type=submit],
-button[type=reset] {
+button[type=submit], button[type=reset]{
   width: 50%;
   height: 5vh;
   font-weight: bolder;
@@ -247,28 +235,28 @@ button[type=reset] {
   cursor: pointer;
 }
 
-#kontakt {
+#kontakt{
   display: flex;
   flex-direction: row;
 }
 
-#mapa {
+#mapa{
   transition: transform 0.2s;
 }
 
-#mapa:hover {
+#mapa:hover{
   transform: scale(1.5);
 }
 
-.typykont h2 {
+.typykont h2{
   font-size: 2.5vh;
 }
 
-.typykont p {
+.typykont p{
   font-size: 1.8vh;
 }
 
-.typykont {
+.typykont{
   display: flex;
   flex-direction: column;
   background-color: #333;
@@ -277,7 +265,7 @@ button[type=reset] {
   margin: 2vh;
 }
 
-.produkty {
+.produkty{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -287,8 +275,7 @@ button[type=reset] {
   max-width: 1250px;
 }
 
-.produkt,
-.produktPromocja {
+.produkt, .produktPromocja{
   display: flex;
   flex-direction: column;
   margin: 30px;
@@ -297,13 +284,13 @@ button[type=reset] {
   width: 350px;
 }
 
-.produktPromocja > * {
+.produktPromocja > *{
   position: relative;
   z-index: -1;
   bottom: 5vh;
 }
 
-.produktPROMOCJAimg {
+.produktPROMOCJAimg{
   z-index: 1;
   height: 50px;
   width: 50px;
@@ -314,7 +301,7 @@ button[type=reset] {
   animation: pulse 2s infinite;
 }
 
-@keyframes pulse {
+@keyframes pulse{
   0% {
     transform: scale(1);
   }
@@ -325,7 +312,7 @@ button[type=reset] {
     transform: scale(1);
   }
 }
-.produktCONTENT {
+.produktCONTENT{
   margin-bottom: 0.5vh;
   display: flex;
   flex-direction: row;
@@ -333,34 +320,32 @@ button[type=reset] {
   align-items: center;
 }
 
-.produktNAME {
+.produktNAME{
   font-weight: bold;
   text-align: center;
 }
 
-.produktNAME h2 {
+.produktNAME h2{
   font-size: 2.3vh;
 }
 
-.produktIMG {
+.produktIMG{
   border-left: dotted 5px black;
   border-bottom: dotted 5px black;
 }
 
-.produkt h3,
-.produktPromocja h3 {
+.produkt h3, .produktPromocja h3{
   font-size: x-large;
   font-weight: bold;
   margin-top: 1.5vh;
 }
 
-.promocjaCena {
+.promocjaCena{
   text-decoration: line-through;
   text-decoration-color: red;
 }
 
-.produkt p,
-.produktPromocja p {
+.produkt p, .produktPromocja p{
   margin-top: 1.5vh;
   border-top: solid 4px black;
   border-bottom: solid 4px black;
