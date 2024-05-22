@@ -59,7 +59,7 @@ p{
 
 .menu{
   background-color: #333;
-  min-width: 20%;
+  min-width: 23%;
   min-height: 74vh;
   justify-content: center;
 }
@@ -103,9 +103,9 @@ ul ul, li ul{
   padding-top: 0;
   padding-left: 4vh;
 }
-@media only screen and (max-width:1270px){
-  .content{
-    margin-left: 5vh;
+@media only screen and (min-height: 700px) and (max-width:1270px){
+  .content, .contentKontakty{
+    margin-left: 4vh;
   }
 }
 .content{
@@ -115,7 +115,7 @@ ul ul, li ul{
 .content, .contentSklep, .contentKontakty{
   display: flex;
   margin-top: 5vh;
-  margin-left: 20vh;
+  margin-left: 16vh;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -194,6 +194,7 @@ ul ul, li ul{
 }
 
 footer{
+  z-index: 2;
   position: sticky;
   background-color: #333;
   height: 6vh;
@@ -349,4 +350,332 @@ button[type=submit], button[type=reset]{
   margin-top: 1.5vh;
   border-top: solid 4px black;
   border-bottom: solid 4px black;
+}
+@media (max-width: 600px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 9vh;
+      width: 100%;
+  }
+
+  header h1 {
+      font-size: 2vh;
+      margin-bottom: 5vh;
+      margin-left: 1.2vh;
+  }
+
+  #koszyk {
+      position: absolute;
+      right: 1.2vh;
+      top: 2.6vh;
+      width: 3.2vh;
+      height: 3.2vh;
+  }
+
+  #koszykimg{
+    height: 2vh;
+    width: 2vh;
+  }
+
+  main {
+      height: 85vh;
+  }
+
+  .menu {
+      width: 25%;
+      height: 85vh;
+      text-align: left;
+  }
+
+  .menu ul {
+      padding-left: 0.5vh; 
+      width: 8vh;
+  }
+
+  .menu ul, .menu li {
+      font-size: 1.5vh; 
+  }
+
+  .menu li {
+      padding-top: 0.5vh;
+  }
+
+  .content, .contentSklep, .contentKontakty {
+      width: 74%;
+      margin-left: 0;
+  }
+
+  .tytulcontent, .tytulcontentSklep {
+      width: 18vh;  
+      float: left;
+  }
+
+  .tytulcontent h2, .tytulcontentSklep h2{
+    font-size: 1.5vh;
+  }
+
+  .content h2 {
+      font-size: 1.5vh;
+  }
+
+  .content p, .content div {
+      font-size: 1.2vh;
+      width: 35vh;
+  }
+  
+  .content div h3 {
+      margin-right: 10px;
+      margin-top: 20px;
+  }
+
+  .content div a {
+      margin-left: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+
+  .wystawa {
+      margin: 1.7vh;
+      width: 7vh;
+      height: 7vh;
+  }
+
+  #rabaty {
+      width: 35vh;
+      height: 20vh;
+  }
+
+  .rabatyLista {
+      font-size: 1.2vh;
+  }
+
+  footer {
+      width: 100%;
+      height: 7vh;
+  }
+
+
+  footer p {
+      font-size: 1.5vh;
+      margin-top: -2vh;
+  }
+  
+  form{
+    width: 25vh;
+    max-height: 60vh;
+  }
+
+  textarea{
+    width: 25vh;
+  }
+
+  .contentKontakty{
+    overflow: auto;
+  }
+
+  #mapa{
+    width: 30vh;
+    margin-bottom: 9vh;
+  }
+
+  #kontakt{
+    flex-direction: column;
+  }
+
+  .typykont{
+    padding-left: 2vh;
+    max-width: 33vh;
+  }
+
+  .produkty{
+    margin: 0;
+  }
+
+  .produkt, .produktPromocja{
+    width: 35vh;
+    height: auto;
+  }
+
+  .produktNAME, .produktIMG{
+    width: 50%;
+  }
+
+  .produktIMG{
+    height: 12vh;
+    width: 12vh;
+  }
+
+  .produktPROMOCJAimg{
+    left: 58vw;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 15vh;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3vh;
+    margin-bottom: 5vh;
+    margin-left: 2vh;
+}
+
+#koszyk {
+    position: absolute;
+    right: 0vh;
+    top: 4.5vh;
+    width: 6vh;
+    height: 6vh;
+}
+
+#koszykimg{
+  height: 3vh;
+  width: 3vh;
+}
+
+main {
+    height: 79vh;
+}
+
+.menu {
+    width: 25%;
+    height: 85vh;
+    text-align: left;
+}
+
+.menu ul {
+    padding-left: 2.5vh; 
+    width: 8vh;
+}
+
+.menu ul, .menu li {
+    font-size: 1.8vh; 
+}
+
+.menu li {
+    padding-top: 1vh;
+}
+
+.content, .contentSklep, .contentKontakty {
+    width: 74%;
+    margin-left: 0;
+}
+
+.tytulcontent, .tytulcontentSklep {
+    width: 25vh;  
+    float: left;
+}
+
+.tytulcontent h2, .tytulcontentSklep h2{
+  font-size: 2vh;
+}
+
+.content h2 {
+    font-size: 2vh;
+}
+
+.content p, .content div {
+    font-size: 1.2vh;
+    width: 50vh;
+}
+
+.content div h3 {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.content div a {
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.wystawa {
+    margin: 1.9vh;
+    width: 12vh;
+    height: 12vh;
+}
+
+#rabaty {
+    width: 45vh;
+    height: 20vh;
+}
+
+.rabatyLista {
+    font-size: 1.5vh;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+}
+
+
+footer p {
+    font-size: 1.8vh;
+    margin-top: -2vh;
+}
+
+form{
+  width: 45vh;
+  max-height: 80vh;
+}
+
+textarea{
+  width: 45vh;
+}
+
+.contentKontakty{
+  overflow: auto;
+}
+
+#mapa{
+  width: 40vh;
+  margin-bottom: 9vh;
+}
+
+#kontakt{
+  flex-direction: column;
+}
+
+.typykont{
+  padding-left: 3vh;
+  max-width: 40vh;
+}
+
+.produkty{
+  margin: 0;
+}
+
+.produkt, .produktPromocja{
+  width: 35vh;
+  height: auto;
+}
+
+.produktNAME, .produktIMG{
+  width: 50%;
+}
+
+.produktIMG{
+  height: 12vh;
+  width: 12vh;
+}
+
+.produktPROMOCJAimg{
+  left: 42vw;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
 }
